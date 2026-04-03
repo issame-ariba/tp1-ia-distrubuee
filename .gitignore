@@ -1,0 +1,39 @@
+# Secrets — ne jamais commiter (clé API, tokens)
+.env
+.env.local
+.env.*.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Environnements virtuels
+.venv/
+venv/
+ENV/
+
+# Outils / IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Streamlit (secrets locaux éventuels)
+.streamlit/secrets.toml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Tests / couverture
+.pytest_cache/
+.coverage
+htmlcov/

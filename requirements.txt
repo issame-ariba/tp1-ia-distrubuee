@@ -1,0 +1,8 @@
+langchain
+langchain-openai
+datasets
+pandas
+scikit-learn
+python-dotenv
+tiktoken
+streamlit

@@ -1,0 +1,27 @@
+[project]
+name = "prompt-engineering-tp"
+version = "0.1.0"
+description = "TP Prompt Engineering for Multi-Agent Systems using LangChain and OpenAI"
+authors = [
+    { name = "Ton Nom" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "langchain",
+    "langchain-openai",
+    "datasets",
+    "pandas",
+    "scikit-learn",
+    "python-dotenv",
+    "tiktoken",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# `packages = ["."]` n'est pas accepté par setuptools (nom de package invalide).
+# Déclaration des modules Python à la racine pour `pip install -e .` :
+[tool.setuptools]
+py-modules = ["main", "app"]
